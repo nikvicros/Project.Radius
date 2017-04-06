@@ -14,6 +14,10 @@ import { SettingsComponent } from './components/account/settings.component';
 import { TagsComponent } from './components/tags/tags.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
+
+import { AgmCoreModule } from 'angular2-google-maps/core';
 
 
 @NgModule({
@@ -28,12 +32,17 @@ import { FooterComponent } from './components/footer/footer.component';
     SettingsComponent,
     TagsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAFxtFYTlNWwFPvBd5E3PpaD0EmOT4lE4M'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
