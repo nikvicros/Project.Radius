@@ -19,6 +19,10 @@ import { LoginComponent } from './components/login/login.component';
 
 import { AgmCoreModule } from 'angular2-google-maps/core';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { MapsComponent } from './components/maps/maps.component';
+import { ActivityFeedComponent } from './components/activity-feed/activity-feed.component';
+import { MainUserComponent } from './components/main-user/main-user.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 
 @NgModule({
@@ -36,7 +40,11 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     FooterComponent,
     RegisterComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    MapsComponent,
+    ActivityFeedComponent,
+    MainUserComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
