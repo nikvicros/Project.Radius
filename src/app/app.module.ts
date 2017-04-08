@@ -23,6 +23,7 @@ import { MapsComponent } from './components/maps/maps.component';
 import { ActivityFeedComponent } from './components/activity-feed/activity-feed.component';
 import { MainUserComponent } from './components/main-user/main-user.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { MessageListComponent } from './components/messages/message-list.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
     MapsComponent,
     ActivityFeedComponent,
     MainUserComponent,
-    SideNavComponent
+    SideNavComponent,
+    MessageListComponent
   ],
   imports: [
     BrowserModule,

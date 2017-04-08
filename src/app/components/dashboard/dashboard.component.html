@@ -2,23 +2,35 @@
     <div class="columns is-multiline">
         <div class="column is-3">
             <div class="notification is-white">
-                <app-main-user></app-main-user>
-                <br>
                 <app-side-nav></app-side-nav>
             </div>
         </div>
-        <div class="column is-9">
+         <div class="column is-9">
+            <div class="notification is-white">
+                <app-activity-feed></app-activity-feed>
+                <app-activity-feed></app-activity-feed>
+                <app-activity-feed></app-activity-feed>
+            </div>
+        </div>
+        <div class="column is-9 is-offset-3">
             <hr>
             <h5 class="title is-5">Top Paths | <a href="#">View All Paths</a></h5>
             <div class="notification is-light">
                 <app-paths></app-paths>
             </div>
         </div>
-        <div class="column is-9">
+        <div class="column is-9 is-offset-3">
             <hr>
             <h5 class="title is-5">Messages | <a href="#">View All Messages</a></h5>
             <div class="notification is-light">
-                <app-activity-feed></app-activity-feed>
+                <app-messages></app-messages>
+            </div>
+        </div>
+        <div class="column is-9 is-offset-3">
+            <hr>
+            <h5 class="title is-5">Favorite | <a href="#">View All People</a></h5>
+            <div class="notification is-light">
+                <app-people></app-people>
             </div>
         </div>
     </div>
