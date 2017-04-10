@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ActivityComponent } from './components/activity/activity.component';
@@ -15,7 +16,7 @@ import { TagsComponent } from './components/tags/tags.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RegisterComponent } from './components/register/register.component';
-import { LoginComponent } from './components/login/login.component';
+import { LoginComponent } from './services/login/login.component';
 
 import { AgmCoreModule } from 'angular2-google-maps/core';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -26,6 +27,15 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { MessageListComponent } from './components/messages/message-list.component';
 import { ChartsComponent } from './components/charts/charts.component';
 
+const appRoutes: Routes = [
+  { path: '', component: DashboardComponent },
+  { path: 'messages', component: MessagesComponent },
+  { path: 'people', component: PeopleComponent },
+  { path: 'paths', component: PathsComponent },
+  { path: 'pipeline', component: PipelineComponent },
+  { path: 'settings', component: SettingsComponent },
+  { path: 'login', component: LoginComponent }
+];
 
 @NgModule({
   declarations: [
@@ -53,6 +63,7 @@ import { ChartsComponent } from './components/charts/charts.component';
   imports: [
     BrowserModule,
     FormsModule,
+    RouterModule.forRoot(appRoutes),
     HttpModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAFxtFYTlNWwFPvBd5E3PpaD0EmOT4lE4M'

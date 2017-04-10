@@ -6,10 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  title: string = 'G-Map Test';
-  lat: number = 51.678418;
-  lng: number = 7.809007;
-
   constructor() { }
 
   ngOnInit() {
