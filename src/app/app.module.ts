@@ -25,9 +25,6 @@ import { ActivityFeedComponent } from './components/activity-feed/activity-feed.
 import { MainUserComponent } from './components/main-user/main-user.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { MessageListComponent } from './components/messages/message-list.component';
-import { ChartsComponent } from './components/charts/charts.component';
-
-
 
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent },
@@ -60,7 +57,6 @@ const appRoutes: Routes = [
     MainUserComponent,
     SideNavComponent,
     MessageListComponent,
-    ChartsComponent
   ],
   imports: [
     BrowserModule,
