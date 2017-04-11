@@ -23,6 +23,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MainUserComponent } from './components/main-user/main-user.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { MessageListComponent } from './components/messages/message-list.component';
+import { ProfileComponent } from './components/account/profile/profile.component';
 
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent },
@@ -53,6 +54,7 @@ const appRoutes: Routes = [
     MainUserComponent,
     SideNavComponent,
     MessageListComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
