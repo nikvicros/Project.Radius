@@ -1,11 +1,12 @@
 # NG4.Project.Radius
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.4.
 
-# System Requirements
+We are using `MongoDB`, `ExpressJS`, `Angular 4` and `NodeJS`.
+
+## System Requirements
 Install the latest version of NodeJS ( https://nodejs.org/en/ ). Will be used primarily for installing and updating project dependecies throught NPM. 
 
-# Getting Started
+## Getting Started
 1. Install the Angular 2 / 4 official CLI ( https://cli.angular.io/ ) globally. Follow instructions on the Angular.io website.
 2. Download or clone this repo. 
 3. CD into the project folder and run `npm install` to download all project depedencies.
