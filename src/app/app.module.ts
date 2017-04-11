@@ -1,3 +1,4 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -18,7 +19,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './services/login/login.component';
 
-import { AgmCoreModule } from 'angular2-google-maps/core';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MapsComponent } from './components/maps/maps.component';
 import { MainUserComponent } from './components/main-user/main-user.component';
@@ -59,13 +59,9 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes),
-    HttpModule,
-    AgmCoreModule.forRoot(
-      {
-      apiKey: 'AIzaSyAFxtFYTlNWwFPvBd5E3PpaD0EmOT4lE4M'
-      }
-    )
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
