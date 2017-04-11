@@ -27,6 +27,8 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { MessageListComponent } from './components/messages/message-list.component';
 import { ChartsComponent } from './components/charts/charts.component';
 
+
+
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent },
   { path: 'messages', component: MessagesComponent },

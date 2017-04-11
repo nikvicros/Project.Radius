@@ -1,15 +1,47 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import {single, multi} from 'app/components/charts/charts.data';
 
 @Component({
   selector: 'app-charts',
-  templateUrl: './charts.component.html',
-  styleUrls: ['./charts.component.css']
+  styleUrls: ['./charts.component.css'],
+  template: `
+    <ngx-charts-pie-grid
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="single"
+      (select)="onSelect($event)">
+    </ngx-charts-pie-grid>
+  `
 })
-export class ChartsComponent implements OnInit {
+export class ChartsComponent {
+  single: any[];
+  multi: any[];
 
-  constructor() { }
+  view: any[] = [700, 400];
 
-  ngOnInit() {
+   // options
+  showXAxis = true;
+  showYAxis = true;
+  gradient = false;
+  showLegend = true;
+  showXAxisLabel = true;
+  xAxisLabel = 'Country';
+  showYAxisLabel = true;
+  yAxisLabel = 'Population';
+
+  colorScheme = {
+    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+  };
+
+  // line, area
+  autoScale = true;
+  constructor() {
+    Object.assign(this, {single, multi})
   }
 
+  onSelect(event) {
+    console.log(event);
+  }
 }
+
