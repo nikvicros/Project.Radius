@@ -20,7 +20,6 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './services/login/login.component';
 
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { MapsComponent } from './components/maps/maps.component';
 import { MainUserComponent } from './components/main-user/main-user.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { MessageListComponent } from './components/messages/message-list.component';
@@ -51,7 +50,6 @@ const appRoutes: Routes = [
     RegisterComponent,
     LoginComponent,
     DashboardComponent,
-    MapsComponent,
     MainUserComponent,
     SideNavComponent,
     MessageListComponent,
