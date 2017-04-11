@@ -65,9 +65,11 @@ const appRoutes: Routes = [
     FormsModule,
     RouterModule.forRoot(appRoutes),
     HttpModule,
-    AgmCoreModule.forRoot({
+    AgmCoreModule.forRoot(
+      {
       apiKey: 'AIzaSyAFxtFYTlNWwFPvBd5E3PpaD0EmOT4lE4M'
-    })
+      }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
