@@ -24,6 +24,7 @@ import { MainUserComponent } from './components/main-user/main-user.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { MessageListComponent } from './components/messages/message-list.component';
 import { ProfileComponent } from './components/account/profile/profile.component';
+import { SandboxComponent } from './components/sandbox/sandbox.component';
 
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent },
@@ -32,6 +33,7 @@ const appRoutes: Routes = [
   { path: 'paths', component: PathsComponent },
   { path: 'pipeline', component: PipelineComponent },
   { path: 'settings', component: SettingsComponent },
+  { path: 'sandbox', component: SandboxComponent },
   { path: 'login', component: LoginComponent }
 ];
 
@@ -55,6 +57,7 @@ const appRoutes: Routes = [
     SideNavComponent,
     MessageListComponent,
     ProfileComponent,
+    SandboxComponent,
   ],
   imports: [
     BrowserModule,
