@@ -26,6 +26,8 @@ import { MessageListComponent } from './components/messages/message-list.compone
 import { ProfileComponent } from './components/account/profile/profile.component';
 import { SandboxComponent } from './components/sandbox/sandbox.component';
 
+import {PopupModule} from 'ng2-opd-popup';
+
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent },
   { path: 'messages', component: MessagesComponent },
@@ -58,11 +60,13 @@ const appRoutes: Routes = [
     MessageListComponent,
     ProfileComponent,
     SandboxComponent,
+    
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
+    PopupModule.forRoot(),
     RouterModule.forRoot(appRoutes),
     HttpModule
   ],
