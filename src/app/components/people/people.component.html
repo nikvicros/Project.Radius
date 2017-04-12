@@ -113,5 +113,74 @@
   </div>
 </div>
 
+<div class="block">
+  <a class="button is-primary modal-button" (click)="clickButton()">Add Person +</a>
+</div> 
+
+<popup #popup1>
+  <div class="field">
+    <label class="label">Name</label>
+    <p class="control">
+      <input class="input" type="text" placeholder="Text input" value="Jenny">
+    </p>
+  </div>
+  <div class="field">
+    <label class="label">E-mail</label>
+    <p class="control has-icon has-icon-right">
+      <input class="input is-danger" type="text" placeholder="Email input" value="Jennyo@mail.com">
+      <span class="icon is-small">
+      <i class="fa fa-warning"></i>
+    </span>
+    </p>
+  </div>
+  <div class="field">
+    <label class="label">Company Information</label>
+    <p class="control has-icon has-icon-right">
+      <input class="input is-danger" type="text" placeholder="Text input" value="ABC LLC">
+      <span class="icon is-small">
+      <i class="fa fa-warning"></i>
+    </span>
+    </p>
+  </div>
+  <div class="field">
+    <label class="label">Number</label>
+    <p class="control has-icon has-icon-right">
+      <input class="input is-success" type="text" placeholder="Number input" value="867-5309">
+      <span class="icon is-small">
+      <i class="fa fa-check"></i>
+    </span>
+    </p>
+    <p class="help is-success">Leave for verification</p>
+  </div>
+  <div class="field">
+    <label class="label">Contact Type</label>
+    <p class="control">
+      <span class="select">
+      <select>
+        <option>Select dropdown</option>
+        <option>Lead</option>
+        <option>Colleague</option>
+        <option>Sales</option>
+      </select>
+    </span>
+    </p>
+  </div>
+  <div class="field">
+    <label class="label">Notes</label>
+    <p class="control">
+      <textarea class="textarea" placeholder="Write A Note"></textarea>
+    </p>
+  </div>
+
+  <div class="field">
+    <p class="control">
+      <label class="checkbox">
+      <input type="checkbox">
+      Add to favorites
+    </label>
+    </p>
+  </div>
+</popup>
+
 
 
