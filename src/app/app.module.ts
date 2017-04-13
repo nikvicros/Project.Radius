@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+
 import { ActivityComponent } from './components/activity/activity.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { PeopleComponent } from './components/people/people.component';
@@ -17,16 +18,20 @@ import { TagsComponent } from './components/tags/tags.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RegisterComponent } from './components/register/register.component';
-import { LoginComponent } from './services/login/login.component';
+import { LoginComponent } from './components/login.component';
 
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MainUserComponent } from './components/main-user/main-user.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { MessageListComponent } from './components/messages/message-list.component';
 import { ProfileComponent } from './components/account/profile/profile.component';
+import { PeopleProfileComponent } from './components/people/profile/people-profile.component';
 import { SandboxComponent } from './components/sandbox/sandbox.component';
 
 import {PopupModule} from 'ng2-opd-popup';
+
+// Imports for loading & configuring the in-memory web api
+
 
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent },
@@ -36,7 +41,8 @@ const appRoutes: Routes = [
   { path: 'pipeline', component: PipelineComponent },
   { path: 'settings', component: SettingsComponent },
   { path: 'sandbox', component: SandboxComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'people/profile', component: PeopleProfileComponent }
 ];
 
 @NgModule({
@@ -59,8 +65,8 @@ const appRoutes: Routes = [
     SideNavComponent,
     MessageListComponent,
     ProfileComponent,
-    SandboxComponent,
-    
+    PeopleProfileComponent,
+    SandboxComponent
   ],
   imports: [
     BrowserModule,

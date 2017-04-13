@@ -20,7 +20,33 @@
             <th>Pipeline</th>
             <th>Description</th>
           </tr>
-  </thead>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Company A</td>
+              <td>Pipeline Info</td>
+            </tr>
+            <tr>
+              <a (click)="clickButton()"><td>Company B</td></a>
+              <td>Pipeline Info</td>
+            </tr>
+            <tr>
+              <td>Company C</td>
+              <td>Pipeline Info</td>
+            </tr>
+            <tr>
+              <td>Company D</td>
+              <td>Pipeline Info</td>
+            </tr>
+            <tr>
+              <td>Company E</td>
+              <td>Pipeline Info</td>
+            </tr>
+          </tbody>
+          
+          
+        
           </table>
 
         </div>
@@ -29,6 +55,9 @@
   </div>
 </div>
 
+
+
+<popup #popup1>
 <div class="card">
   <div class="card-content">
     <section id=timeline>
@@ -109,3 +138,5 @@
   <a class="button is-primary">New Milestone +</a>
   <a class="button is-warning">Edit Pipeline </a>
 </div>
+</popup>
+
