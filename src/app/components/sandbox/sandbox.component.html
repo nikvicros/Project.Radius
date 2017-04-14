@@ -1,4 +1,61 @@
+<h1>{{title}}</h1>
+<h2>My Contacts</h2>
 
+<ul>
+    <li *ngFor="let contact of contacts" 
+    [class.selected]="contact === selectedContact" 
+    (click)="onSelect(contact)">
+        <div class="card">
+            <div class="card-content">
+                <article class="media">
+                    <figure class="media-left">
+                        <p class="image is-64x64">
+                            <img src="http://bulma.io/images/placeholders/128x128.png">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>{{contact.name}}</strong> <small>@{{contact.name}}</small> <small>31m</small>
+                                <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu
+                                pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat
+                                facilisis.
+                            </p>
+                        </div>
+                        <nav class="level is-mobile">
+                            <div class="level-left">
+                                <a class="level-item">
+                                    <span class="icon is-small"><i class="fa fa-reply"></i></span>
+                                </a>
+                                <a class="level-item">
+                                    <span class="icon is-small"><i class="fa fa-retweet"></i></span>
+                                </a>
+                                <a class="level-item">
+                                    <span class="icon is-small"><i class="fa fa-heart"></i></span>
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="media-right">
+                        <button class="delete"></button>
+                    </div>
+                </article>
+            </div>
+            <footer class="card-footer">
+                <p class="card-footer-item">
+                    <span>
+        View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
+      </span>
+                </p>
+                <p class="card-footer-item">
+                    <span>
+        Share on <a href="#">Facebook</a>
+      </span>
+                </p>
+            </footer>
+        </div>
+        <br>
+    </li>
+</ul>
 
-
-
+<contact-detail [contact]="selectedContact"></contact-detail>

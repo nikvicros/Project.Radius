@@ -30,7 +30,11 @@ import { SandboxComponent } from './components/sandbox/sandbox.component';
 
 import {PopupModule} from 'ng2-opd-popup';
 
-// Imports for loading & configuring the in-memory web api
+// Dev Imports !!! REMOVE AFTER TESTING!!!!
+import { ContactDetailComponent } from './components/sandbox/contact-detail.component'; 
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './in-memory-data.service';
+
 
 
 const appRoutes: Routes = [
@@ -66,15 +70,18 @@ const appRoutes: Routes = [
     MessageListComponent,
     ProfileComponent,
     PeopleProfileComponent,
-    SandboxComponent
+    SandboxComponent,
+    ContactDetailComponent // DEV IMPORT
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    PopupModule.forRoot(),
+    HttpModule,
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
+    PopupModule.forRoot(), // DEV IMPORT 
     RouterModule.forRoot(appRoutes),
-    HttpModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
