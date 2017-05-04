@@ -1,5 +1,5 @@
 # NG4.Project.Radius
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0
 
 We are using `MongoDB`, `ExpressJS`, `Angular 4` and `NodeJS`.
 
